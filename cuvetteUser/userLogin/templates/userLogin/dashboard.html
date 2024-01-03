@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Our App</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            width: 300px;
+            margin: auto;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        a.button {
+            display: block;
+            width: 150px;
+            padding: 10px;
+            margin: 10px auto;
+            color: #fff;
+            text-decoration: none;
+            background-color: #007bff;
+            border-radius: 4px;
+        }
+
+        a.button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome {{ user.username }} to Our App. Have a Nice Day!</h1>
+        <a href="{% url 'profile' %}" class="button">My Profile</a>
+        <a href="{% url 'logout' %}" class="button">Logout</a>
+    </div>
+</body>
+</html>
