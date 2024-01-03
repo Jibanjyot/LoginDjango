@@ -1,34 +1,54 @@
-# Your Project Name
+# Login Logout App
 
 This is a simple Django project for user registration, login, and profile functionality.
 
-## Setup
+# Setup
 
-### 1. Create a Virtual Environment
+## 1. Create a Virtual Environment
+
+### On Unix or MacOS
+```bash
+python3 -m venv venv
+```
+### On Windows
+```bash
+python -m venv venv
+```
+
+## 2. Activate the Virtual Environment
+
+### On Unix or MacOS
 
 ```bash
-# On Unix or MacOS
-python3 -m venv venv
-
-# On Windows
-python -m venv venv
-
-### 1. Activate the Virtual Environment
-
-# On Unix or MacOS
 source venv/bin/activate
+```
 
-# On Windows
+### On Windows
+```bash
 venv\Scripts\activate
+```
 
-### Install Dependencies
+## 3. Install Dependencies
 
+```bash
 pip install -r requirements.txt
+```
 
-### Run Migrations
+## 4. Navigate to root of project
 
+```bash
+cd ./cuvetteUser
+```
+
+
+## 5. Run Migrations
+```bash
 python manage.py migrate
+```
 
-### Run the Project
-
+## 6. Run the Project
+```bash
 python manage.py runserver
+```
+
+### Access the application at http://127.0.0.1:8000/.
