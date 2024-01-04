@@ -4,3 +4,4 @@ cuvetteUser/db.sqlite3
 cuvetteUser/userLogin/__pycache__/views.cpython-311.pyc
 cuvetteUser/cuvetteUser/__pycache__
 cuvetteUser/userLogin/__pycache__
+.vscode/launch.json
